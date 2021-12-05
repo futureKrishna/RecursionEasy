@@ -1,0 +1,16 @@
+int countZeros(int n) {
+  if(n<=9){
+    if(n==0){
+        return 1;
+    }
+    else return 0;
+  }
+    int SN=n/10;
+   int ans=countZeros(SN);
+    if(n%10==0){
+        return ans+1;
+    }
+    else{
+        return ans;
+    }
+}
