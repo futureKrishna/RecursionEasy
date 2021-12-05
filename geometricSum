@@ -1,0 +1,7 @@
+float geometricSum(int k) {
+    if(k==0){
+        return 1;
+    }
+    float n=1/pow(2,k);
+    return geometricSum(k-1)+n;
+}
